@@ -2,15 +2,13 @@
 
 A Simple Todo list app made using React and Vite.
 
----
 
-### Demo
+## Demo
 
 ![App Demo](./demo.gif)
 
----
 
-### Getting Started
+## Getting Started
 
 ```bash
 npm install
