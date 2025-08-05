@@ -1,0 +1,86 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0px;
+  background-color: white;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+button.theme-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+main {
+  background-color: rgb(225, 225, 225);
+  position:absolute;
+  left: 50%;
+  /* this below is to shift the element in x axis and y axis, here we shifted left to 50%, otherwise by default the top left corner of element is positioned by using position: absolute and top, bottom, left, right properties. */
+  transform: translate(-50%,0);
+  top: 100px;
+  min-height: 400px;
+  min-width: 300px;
+  padding: 20px 25px;
+  border-radius: 10px;
+  
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main.dark {
+  background-color: #404040;
+}
+
+main > h1 {
+  margin: 0;
+  margin-top: 5px;
+}
+
+.add-todo-div {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: rgb(180, 180, 180);
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  padding: 15px 20px;
+  min-width: 200px;
+}
+
+.add-todo-div.dark {
+  background-color: #303030;
+}
+
+input {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  outline: none;
+}
+
+
+div.todo {
+  background-color: rgb(180, 180, 180);
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  
+  min-width: 300px;
+}
+
+div.todo.dark {
+  background-color: #303030;
+}
